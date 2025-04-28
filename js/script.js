@@ -10,16 +10,15 @@ const negativetiveRandomNumber = Math.floor(Math.random() * 6) +1
 
 function generateNumber() {
   //input
-  const userInput = document.querySelector('input[name="kind-of-number]:checked').value;
+  const userInput = document.getElementById('option-positive').checked
   // process
-  if (userInput === "1"); {
+  if (userInput === true) {
     //output
     document.getElementById('result').innerHTML =
-    '<p> The random number is:' + 'positiveRandomNumber' + '<p>'
-  }
-  else (userInput === "1"); {
+      '<p> The random number is:' + positiveRandomNumber + '<p>'
+  } else {
     //output
     document.getElementById('result').innerHTML =
-    '<p> The random number is:' + 'negativeRandomNumber' + '<p>'
+      '<p> The random number is:' + '-' + negativetiveRandomNumber + '<p>'
   }
 }
