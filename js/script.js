@@ -5,20 +5,20 @@
 // This file contains the JS functions for index.html
 "use strict"
 
-const positiveRandomNumber = Math.floor(Math.random() * 6) +1 
-const negativetiveRandomNumber = Math.floor(Math.random() * 6) +1 
+const positiveRandomNumber = Math.floor(Math.random() * 6) + 1
+const negativetiveRandomNumber = Math.floor(Math.random() * 6) + 1
 
 function generateNumber() {
-  //input
-  const userInput = document.getElementById('option-positive').checked
+  // input
+  const userInput = document.getElementById("option-positive").checked
   // process
   if (userInput === true) {
     //output
-    document.getElementById('result').innerHTML =
-      '<p> The random number is:' + positiveRandomNumber + '<p>'
+    document.getElementById("result").innerHTML =
+      "<p> The random number is:" + positiveRandomNumber + "<p>"
   } else {
-    //output
-    document.getElementById('result').innerHTML =
-      '<p> The random number is:' + '-' + negativetiveRandomNumber + '<p>'
+    // output
+    document.getElementById("result").innerHTML =
+      "<p> The random number is:" + "-" + negativetiveRandomNumber + "<p>"
   }
 }
